@@ -1,0 +1,337 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header.head{
+    display: flex;
+    position: sticky;
+    top: 0;
+    background-color: #666;
+    width: 100%;
+    z-index: 1;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+header.head nav.menu ul{
+    display: flex;
+    margin-right: 20px;
+}
+header.head nav.menu ul li{
+    margin-left: 10px;
+}
+header.head nav.menu ul li a{
+    text-decoration: none;
+    color: rgb(250, 250, 250);
+}
+
+.img img {
+    width: 100px;
+    border-radius: 10px;
+}
+
+ul {
+    list-style: symbols();
+}
+
+ul li.active {
+    color: red;
+}
+
+ul>.c {
+    /*make the style to every class name c inside "ul .c"*/
+    color: green;
+}
+
+.test_ol+li {
+    /*after class test_ol in of li one tag */
+    color: rgb(255, 0, 255);
+}
+
+.d~li {
+    /*after class d of li to the end of block */
+    color: pink;
+}
+
+img:active {
+    width: 120px;
+}
+
+h1:hover {
+    color: red;
+}
+
+input:focus {
+    background-color: #80d3e3;
+}
+
+.form {
+    width: 400px;
+    height: 160px;
+    background-color: #909090;
+    border-radius: 5px;
+    display: flex;
+    padding: 20px;
+}
+
+.form .img {
+    text-align: center;
+}
+
+.a_container {
+    height: 200px;
+    width: 50%;
+    background-color: antiquewhite;
+}
+
+.a_container fieldset {
+    border: none;
+    display: flex;
+}
+
+.table2 table {
+    width: 50%;
+}
+
+table,
+tr,
+td {
+    border: 1px solid black;
+    height: 30px;
+}
+
+.color_container {
+    width: 50%;
+}
+
+.color_container .cl_contain {
+    display: flex;
+}
+
+.first_child .color1 {
+    background-color: #efefef;
+    width: 20%;
+    height: 70px;
+}
+
+.first_child .color2 {
+    background-color: #e3e3e3;
+    width: 80%;
+    height: 70px;
+}
+
+.second_child {
+    width: 100%;
+    height: 140px;
+    background-color: #d9d9d9;
+}
+
+.third_child .color1 {
+    width: 33.3%;
+    height: 110px;
+    background-color: #d1d1d1;
+}
+
+.third_child .color2 {
+    width: 33.3%;
+    height: 110px;
+    background-color: #c7c7c7;
+}
+
+.third_child .color3 {
+    width: 33.3%;
+    height: 110px;
+    background-color: #bcbcbc;
+}
+
+.third_child {
+    display: flex;
+}
+
+.fourth_child {
+    display: flex;
+}
+
+.fourth_child div {
+    height: 50px;
+}
+
+.fourth_child .color1 {
+    width: 20%;
+    background-color: #b1b1b1;
+}
+
+.fourth_child .color2 {
+    width: 60%;
+    background-color: #a3a3a3;
+}
+
+.fourth_child .color3 {
+    width: 20%;
+    background-color: #9d9d9d;
+}
+
+.first_child .color2 .menu {
+    display: flex;
+    float: right;
+    align-items: center;
+}
+
+.first_child .color2 .menu .item {
+    background-color: #b0b0b0;
+    list-style: none;
+}
+
+.first_child .color2 .menu .item a {
+    color: black;
+    text-decoration: none;
+    padding: 2px 10px;
+}
+
+.first_child .color2 ul li {
+    text-align: center;
+}
+
+.menu .item {
+    position: relative;
+    display: inline-block;
+}
+
+.menu .item ul {
+    display: none;
+    position: absolute;
+    background-color: #c7c7c7;
+    min-width: 35px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    list-style: none;
+}
+
+.menu .item ul a:hover {
+    background-color: #909090;
+}
+
+.menu .item:hover .dropdown-content {
+    display: block;
+}
+
+.css-layout {
+    width: 100%;
+}
+
+/* Style the header */
+.css-layout header {
+    background-color: #666;
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    background-image: url('./cat.png');
+    background-size: 150px;
+    background-position: 40%;
+    background-repeat: no-repeat;
+}
+
+/* Create two columns/boxes that floats next to each other */
+.css-layout section nav {
+    float: left;
+    width: 20%;
+    height: 300px;
+    /* only for demonstration, should be removed */
+    background: #ccc;
+    padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+article {
+    float: left;
+    padding: 20px;
+    width: 68%;
+    background-color: #f1f1f1;
+    height: 300px;
+    /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style the footer */
+.css-layout footer {
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+nav .childs li:last-child {
+    color: red;
+}
+
+nav .childs *:nth-child(2) {
+    color: red;
+}
+
+.p_pag::after {
+    content: ' Visual After';
+    color: red;
+}
+
+.p_pag::before {
+    content: ' Visual Befor ';
+    color: red;
+}
+
+section article {
+    display: inline-block;
+    border: #666 2px;
+    border-style: dashed;
+    overflow: scroll;
+    text-align: left;
+    background-color: orange;
+    background-repeat: repeat;
+    background-image: url('./cat.png');
+    background-size: 50px;
+}
+
+.css-layout section {
+    display: flex;
+}
+.css-layout section article{
+    width: 80%;
+}
+
+section .grid_container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #2196F3;
+    padding: 10px;
+    text-align: center;
+}
+
+section .grid_container .grid_items{
+    background-color: #a3a3a3;
+    border: black solid 1px;
+    padding: 10px;
+}
+
+.css-layout footer{
+    position: sticky;
+    bottom: 0;
+}
+.footer {
+    background-color: #666;
+    padding: 20px;
+    text-align: center;
+    position: sticky;
+    bottom: 0;
+}
