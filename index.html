@@ -1,12 +1,275 @@
 <!DOCTYPE html>
-<html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta name="Done" content="Example">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./main.css">
+
+    <title>learn in iATER</title>
 </head>
+
 <body>
-    <h1>Hello world</h1>
-    <p>edit index</p>
+    <header class="head">
+        <nav>LOGO</nav>
+        <nav class="menu">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Lessons</a></li>
+                <li><a href="">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>1. First text</h1>
+    <div>
+        <h2>Hello, My name is Done</h2>
+        <p>Week1 Home work</p>
+    </div>
+
+    <h1>2. Form</h1>
+    <div class="form">
+        <div class="img">
+            <img title="my_image" src="./d3.png" alt="cat-image">
+        </div>
+        <form action="https://chat.openai.com/c/0832be4d-7c60-4c7e-ac21-824d38386376" id="myForm" class="myForm">
+            <div>
+                <label for="">User Name</label>
+                <input type="text" id="uname" required>
+            </div>
+            <div>
+                <label for="">Passwod</label>
+                <input type="text" id="password" required>
+            </div>
+            <div>
+                <input type="submit">
+            </div>
+        </form>
+    </div>
+
+    <h1>3. Input and table</h1>
+    <div>
+        <a href="https://www.google.com">google</a>
+        <div class="container">
+            <div class="a_container">
+                <p>I study computer. my name is Done</p>
+                <fieldset>
+                    <div>
+                        <input type="radio" id="Banana" name="fruit" value="Banana" checked />
+                        <label for="Banana">Banana</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="Apple" name="fruit" value="Apple" />
+                        <label for="Apple">Apple</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="Mango" name="fruit" value="Mango" />
+                        <label for="Mango">Mango</label>
+                    </div>
+                </fieldset>
+            </div>
+            <div class="table1">
+                <table>
+                    <tr>
+                        <td>red</td>
+                        <td>banana</td>
+                        <td rowspan="2">DONE</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">blue</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="table2">
+                <table>
+                    <tr>
+                        <td>red</td>
+                        <td>Banana</td>
+                        <td rowspan="2">Done</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">blue</td>
+                    </tr>
+                    <tr>
+                        <td>red</td>
+                        <td>banana</td>
+                        <td rowspan="2">Done</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">blue</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div>
+        <table>
+            <caption>
+                Supeheros and sidekicks
+            </caption>
+            <colgroup>
+                <col>
+                <col span="2" class="batman">
+                <col span="2" class="flash">
+            </colgroup>
+            <tr>
+                <td></td>
+                <th scope="col">Batman</th>
+                <th scope="col">Robin</th>
+                <th scope="col">The flash</th>
+                <th scope="col">Kid flash</th>
+            </tr>
+            <tr>
+                <th scope="row">Skill</th>
+                <td>Smart, Stron</td>
+                <td>Dex, acrobat</td>
+                <td>Super, Speed</td>
+            </tr>
+        </table>
+    </div>
+
+    <h1>4. Color layout</h1>
+    <h3>A-1</h3>
+    <div class="color_container">
+        <div class="first_child cl_contain">
+            <div class="color1"></div>
+            <div class="color2"></div>
+        </div>
+        <div class="second_child cl_contain"></div>
+        <div class="third_child cl_contain">
+            <div class="color1"></div>
+            <div class="color2"></div>
+            <div class="color3"></div>
+        </div>
+        <div class="fourth_child cl_contain">
+            <div class="color1"></div>
+            <div class="color2"></div>
+            <div class="color3"></div>
+        </div>
+    </div>
+
+    <h3>M-1</h3>
+    <div class="color_container">
+        <div class="first_child cl_contain">
+            <div class="color1"></div>
+            <nav class="color2">
+                <ul class="menu">
+                    <li class="item">
+                        <a href="">Menu1</a>
+                        <ul class="dropdown-content">
+                            <li><a href="">soft1</a></li>
+                            <li><a href="">soft2</a></li>
+                            <li><a href="">soft3</a></li>
+                            <li><a href="">soft4</a></li>
+                        </ul>
+                    </li>
+                    <li class="item">
+                        <a href="">Menu2</a>
+                        <ul class="dropdown-content">
+                            <li><a href="">soft1</a></li>
+                            <li><a href="">soft2</a></li>
+                            <li><a href="">soft3</a></li>
+                            <li><a href="">soft4</a></li>
+                        </ul>
+                    </li>
+                    <li class="item">
+                        <a href="">Menu3</a>
+                        <ul class="dropdown-content">
+                            <li><a href="">soft1</a></li>
+                            <li><a href="">soft2</a></li>
+                            <li><a href="">soft3</a></li>
+                            <li><a href="">soft4</a></li>
+                        </ul>
+                    </li>
+                    <li class="item">
+                        <a href="">Menu4</a>
+                        <ul class="dropdown-content">
+                            <li><a href="">soft1</a></li>
+                            <li><a href="">soft2</a></li>
+                            <li><a href="">soft3</a></li>
+                            <li><a href="">soft4</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="second_child cl_contain"></div>
+        <div class="third_child cl_contain">
+            <div class="color1"></div>
+            <div class="color2"></div>
+            <div class="color3"></div>
+        </div>
+        <footer class="fourth_child cl_contain">
+            <div class="color1"></div>
+            <div class="color2"></div>
+            <div class="color3"></div>
+        </footer>
+    </div>
+
+    <h1>5. CSS Layout Float</h1>
+    <div class="css-layout">
+        <header>
+            <h2>Caty</h2>
+        </header>
+
+        <section class="arti">
+            <nav>
+                <ul class="childs">
+                    <li>London</li>
+                    <li>Paris</li>
+                    <p>p tag</p>
+                    <li>Tokyo</li>
+                </ul>
+            </nav>
+            <article >
+                <h1>London</h1>
+                <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a
+                    metropolitan area of over 13 million inhabitants.</p>
+                <p class="p_pag">Standing on the River Thames, London has been a major settlement for two millennia, its history going
+                    back to its founding by the Romans, who named it Londinium.</p>
+
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit omnis eum voluptas officia, cumque labore quo autem necessitatibus dolorum perferendis ducimus. Animi nesciunt velit eos veritatis unde eveniet id illum!</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi pariatur eius non ex debitis recusandae odit ullam culpa, earum aut enim, sequi quam et laboriosa
+                    m eum, veritatis quis possimus consequatur!</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis omnis repellendus optio consequatur illo repellat laudantium, ea laborum praesentium eaque? Minima nisi sed quibusdam rerum asperiores alias autem inventore porro.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum illo inventore blanditiis dolor possimus non vero laudantium labore, fugit accusantium fuga cum deserunt consequuntur minus? Velit explicabo dolorem quaerat dolores.</p>
+            </article>
+        </section>
+        <section>
+            <div class="grid_container">
+                <div class="grid_items">1</div>
+                <div class="grid_items">2</div>
+                <div class="grid_items">3</div>
+                <div class="grid_items">4</div>
+                <div class="grid_items">5</div>
+                <div class="grid_items">6</div>
+                <div class="grid_items">7</div>
+                <div class="grid_items">8</div>
+                <div class="grid_items">9</div>
+            </div>
+        </section>
+
+        <footer>
+            <p>Footer</p>
+        </footer>
+    </div>
+
+    <div class="footer">
+        <h5>@copyright</h5>
+    </div>
+    <script>
+        document.getElementById("myForm").addEventListener("submit", function (event) {
+            event.preventDefault(); // Prevent form submission
+
+            // Get the value from the input field
+            let uname = document.getElementById("uname").value;
+            let password = document.getElementById("password").value;
+
+            // Display the value
+            alert("User Name: " + uname + "\n" + "Password: " + password);
+        });
+    </script>
 </body>
+
 </html>
